@@ -13,3 +13,9 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+let width = screen.width;
+
+console.log(width);
+
+
