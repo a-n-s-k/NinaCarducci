@@ -29,14 +29,26 @@ body {
 	margin-bottom: 0;
 }
 
-.nav li {
+.f-nav ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	font-size: 14px;
+	margin: 20px 50px;
+}
+
+.nav li, .f-nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+.nav a, .f-nav a {
 	text-decoration: none;
 	color: #000
 }
+
+
+
+
 
 .social-link img {
 	width: 20px;
@@ -49,6 +61,7 @@ body {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+	flex: 1;
 }
 
 .picture .left::before {
@@ -72,7 +85,7 @@ body {
 	width: 100%;
 }
 #about-me {
-	flex: 2
+	flex: 2;
 }
 .about-me__title {
 	margin-top: 1em;
@@ -244,10 +257,17 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+.carou-sel {
+	display: block !important;
+	max-width: 1920px !important;
+}
 
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
+	}
+	#about-me {
+		flex: 1;
 	}
 	#about, #contact .container {
 		align-items: center;
@@ -256,8 +276,15 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+
+	#about-me h2, #about-me p {
 		width: 100%;
+	}
+
+
+	.carou-sel {
+		display: block !important;
+		max-width: 1180px !important;
 	}
 }
 
@@ -267,7 +294,7 @@ input[type="submit"] {
 
 	}
 	.picture {
-		width: 50%;
+		width: 80%;
 	}
 	.picture.left::before {
 		width: 100%;
@@ -318,6 +345,10 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+	.carou-sel {
+		display: block !important;
+		max-width: 1000px !important;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -347,14 +378,18 @@ input[type="submit"] {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
 	form {
 		width: 100%;
 	}
 	.picture {
 		width: 80%;
 	}
+
+	.carou-sel {
+		display: block !important;
+		max-width: 650px;
+	}
 }
 
-.carous {
- max-width: 1920px;
-}
+
