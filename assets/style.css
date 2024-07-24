@@ -192,6 +192,8 @@ body {
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
+	flex-direction: column;
+	row-gap: 20px;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -200,6 +202,8 @@ body {
 #contact .container {
 	display: flex;
 }
+
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -242,6 +246,33 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+
+
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 100px;
+	padding-block: 30px;
+	align-items: center;
+}
+.m-container {
+	display: flex;
+	flex-direction: column;
+}
+.f-nav ul {
+	display: flex;
+	list-style-type: none;
+	font-size: 14px;
+}
+.nav li, .f-nav li {
+	padding-inline: 10px;
+}
+.nav a, .f-nav a {
+	text-decoration: none;
+	color: #000
+}
+
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -305,6 +336,7 @@ input[type="submit"] {
 	#contact .container {
 		flex-direction: column;
 	}
+
 	#contact .picture.right {
 		margin-top: 1em;
 	}
@@ -350,6 +382,11 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+	footer {
+		flex-wrap: wrap;
+		row-gap: 20px;
+		column-gap: 20px;
 	}
 }
 
