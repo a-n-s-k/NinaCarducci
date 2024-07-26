@@ -186,21 +186,14 @@
 
 <footer>
 	<!-- MICRODATA -->
-	<div class="m-container" itemscope itemtype="https://schema.org/PostalAddress">
+<!-- 	<div class="m-container" itemscope itemtype="https://schema.org/PostalAddress">
 		<span itemprop="name">Nina Carducci</span>
 		<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
 		<span itemprop="postalCode">33200</span>
 		<span itemprop="addressLocality">Bordeaux</span>
 		<span itemprop="addressCountry">France</span>
 		<div>Téléphone: <span itemprop="telephone" content="+330556677889">05 56 67 78 89</span></div>
-<!-- 
-		P.O. Box<span itemprop="postOfficeBoxNumber">1234</span>
-		<span itemprop="addressLocality">Mountain View</span>,
-		<span itemprop="addressRegion">CA</span> 
-		<span itemprop="postalCode">94043</span>,
-		
-		<span itemprop="addressCountry">United States</span> -->
-	</div>
+	</div> -->
 
 
 
@@ -220,6 +213,19 @@
 			</address>
 			<div>Téléphone: <span itemprop="telephone" content="+330556677889">05 56 67 78 89</span></div>
 	</div> -->
+
+
+	<div class="m-container" itemscope itemtype="https://schema.org/LocalBusiness">
+		<span itemprop="name">Nina Carducci</span>
+		<address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+			<span itemprop="streetAddress"> 68 avenue Alsace-Lorraine</span>
+			<span itemprop="postalCode">33200</span>
+			<span itemprop="addressLocality">Bordeaux</span>
+			<span itemprop="addressRegion">Nouvelle Aquitaine</span>
+			<span itemprop="addressCountry">France</span>
+			<span>Téléphone: <span itemprop="telephone" content="+330556677889">05 56 67 78 89</span></span>
+		</address>
+</div>
 	<div class="f-nav">   
 		<ul>
 			<li><a href="#">Accueil</a></li>
