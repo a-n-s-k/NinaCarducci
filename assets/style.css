@@ -258,7 +258,11 @@ footer {
 }
 .m-container {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	/* flex-direction: column; */
+}
+.m-container span{
+ padding: 0 10px;
 }
 .f-nav ul {
 	display: flex;
