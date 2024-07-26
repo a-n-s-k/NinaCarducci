@@ -389,4 +389,17 @@ footer {
 		column-gap: 20px;
 	}
 }
-
+.microd {
+	width: 100px;
+	height: 100px;
+}
+/* .picture.left::before {
+	content: ' ';
+	background-color: #E5975F;
+	width: 374px;
+	height: 329px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+} */
