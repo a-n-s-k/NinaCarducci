@@ -258,12 +258,13 @@ footer {
 }
 .m-container {
 	display: flex;
-	flex-wrap: wrap;
-	/* flex-direction: column; */
+	flex-direction: column;
+	margin-left: 40px;
 }
 .m-container span{
  padding: 0 10px;
 }
+
 .f-nav ul {
 	display: flex;
 	list-style-type: none;
@@ -395,15 +396,5 @@ footer {
 }
 .microd {
 	width: 100px;
-	height: 100px;
+	height: 52px;
 }
-/* .picture.left::before {
-	content: ' ';
-	background-color: #E5975F;
-	width: 374px;
-	height: 329px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-} */
