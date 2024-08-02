@@ -251,13 +251,13 @@ input[type="submit"] {
 
 footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content:right;
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
 }
 .m-container {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	margin-left: 40px;
 }
